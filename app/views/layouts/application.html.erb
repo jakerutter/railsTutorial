@@ -4,12 +4,25 @@
     <title>MyApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css'%>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+
+<ul class="nav navbar">
+  <li class="nav-item">
+    <a class="nav-link active"><%= link_to "Home", home_path %></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active"><%= link_to "Create Post", new_post_path %></a>
+  </li>
+</ul>
+
+<div class="container">
     <%= yield %>
+</div>
   </body>
 </html>

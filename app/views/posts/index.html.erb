@@ -1,2 +1,7 @@
-<h1>Hello and Welcome to this Rails app!</h1>
-<p>What would you like to do in this application today?</p>
+<h1>Blog Posts</h1>
+<p>Here are all of the current blog posts:</p>
+
+<% @posts.each do |post| %>
+  <h3><%= post.title %></h3>
+  <p><%= post.body %></p>
+<% end %>
