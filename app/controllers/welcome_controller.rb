@@ -4,7 +4,7 @@ class WelcomeController < ApplicationController
 
   def about
     @title = 'About this Project';
-    @content = 'this is the about page';
+    @content = "You can blog about whatever you\'d like.
+     Many choose to blog about activities they enjoy, books they love, or information that might be useful to other professionals.";
   end
-
 end

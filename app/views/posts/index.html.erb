@@ -2,6 +2,6 @@
 <p>Here are all of the current blog posts:</p>
 
 <% @posts.each do |post| %>
-  <h3><%= post.title %></h3>
+  <h2 class="bg-info"><%= post.title %></h2>
   <p><%= post.body %></p>
 <% end %>
